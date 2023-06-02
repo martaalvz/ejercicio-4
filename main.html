@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>APIs de HTML</title>
+</head>
+
+<body>
+    <div id="main-div" class="content-wrapper">
+        <h1 class="select-title">Seleccione archivo a reproducir</h1>
+        <label for="file"></label>
+        <input type="file" class="select-video" id="file" name="file" accept="video/*">
+        <output id="video-output"></output>
+        <div id="controls-div" class="controls">
+            <button class="buttons" id="play" style="visibility: hidden;" title="Reproducir" aria-label="Reproducir">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="buttons" id="pause" style="visibility: hidden;" title="Pausa" aria-label="Pausa">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="buttons" id="down" style="visibility: hidden;" title="Bajar volumen"
+                aria-label="Bajar volumen">
+                <i class="fa-solid fa-volume-low"></i>
+            </button>
+            <button class="buttons" id="up" style="visibility: hidden;" title="Subir volumen"
+                aria-label="Subir volumen">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
